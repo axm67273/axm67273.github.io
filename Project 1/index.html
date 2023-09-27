@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      body {
+        background-color: lightgray;
+      }
+      main {
+        width: 1000px;
+        margin: 0 auto;
+        background-color: #757575;
+      }
+      header {
+        display: flex;
+        justify-content: space-between;
+      }
+      #logo {
+        background-color: #255172;
+        color: white; font-family: Arial, Helvetica, sans-serif;
+      
+      }
+      nav {
+        background-color: white; 
+        ul {
+         list-style: none;
+          padding: 0;
+          margin: 0;
+          overflow: hidden;
+          background-color: white;
+        }
+        li {
+         float: right;
+        }
+        li a { 
+          display: block;
+          color: #EDA33C;
+          text-align: center;
+          padding: 14px 16px;
+          text-decoration: none;
+        }
+        li a:hover {
+          background-color: #255172 ;
+        }
+      }
+      #hero {
+        color: white;
+        text-align: center;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 60px;
+        font-style: normal;
+        font-weight: 100px;
+        line-height: normal;
+        flex-direction: column;
+        display: flex;
+        justify-content: center;
+        height: 600px;
+        background-image:url('aurora-gettysburg-sky.jpg');
+    }
+      .row {
+        display: flex;
+        gap: 10px;
+        justify-content: center;
+      }
+      .card {
+        width: 300px;
+        background-color: #EDD796;
+        text-align: center; 
+        color: black;
+        padding: 10px;
+        font-family: Arial, Helvetica, sans-serif
+        
+      }
+     footer{ background-color: #255172;
+        color: white; font-family: Arial, Helvetica, sans-serif; text-align: center; font-size: small;
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <header>
+        <div id="logo">
+          <h1>Central PA Tourism</h1>
+        </div>
+        <nav>
+          <ul>
+            <li><a href="#Home">Home</a></li>
+            <li><a href="#Visit">Visit</a></li>
+            <li><a href="#Contact">Contact</a></li>
+          </ul>
+        </nav>
+      </header>
+      <div id="hero">
+        <h3>Great Faces Great Places</h3>
+      </div>
+      <div id="content">
+        <hr />
+        <div class="row">
+          <!-- Card -->
+          <div class="card">
+            <div><img src="meg-boulden-qac9Q3pWHWg-unsplash.jpg" width="300px" height="200px" /></div>
+            <div class="desc">
+              <h3>Hersheypark</h3>
+              <p>A renowned amusement park featuring exciting rides, live entertainment, and 
+                an opportunity to learn about chocolate-making at Hershey's Chocolate World.
+              </p>
+              <a   href="https://www.hersheypark.com/"> Visit Website color</a>
+            </div>
+          </div>
+          <!-- /Card -->
+
+          <!-- Card -->
+          <div class="card">
+            <div><img src="john-kostyk-AY8TXC7mh1E-unsplash.jpg" width="300px" height="200px"/></div>
+            <div class="desc">
+              <h3>Gettysburg National Military Park</h3>
+              <p>
+                Site of the pivotal Battle of Gettysburg during the Civil War,
+                offering guided tours, historic monuments, and a visitor center
+                with exhibits.
+              </p>
+              <a  href="https://www.nps.gov/gett/index.htm"> Visit Website </a>
+            </div>
+          </div>
+          <!-- /Card -->
+
+          <!-- Card -->
+          <div class="card">
+            <div><img src="city-3575951_1280.jpg" width="300px" height="200px" /></div>
+            <div class="desc">
+              <h3>Pennsylvania State Capital</h3>
+              <p>
+                An impressive architectural gem in Harrisburg showcasing exquisite artwork, stunning interiors, and guided tours to learn about the state's government and history.
+              </p>
+              <a  href="http://www.pacapitol.com/"> Visit Website </a>
+            </div>
+          </div>
+          <!-- /Card -->
+        </div>
+        <hr />
+        <div class="row">
+          <!-- Card -->
+          <div class="card">
+            <div><img src="4036354443_290ae8dc11_b.jpg" width="300px" height="200px" /></div>
+            <div class="desc">
+              <h3>Lewisburg</h3>
+              <p>
+                A charming small town known for its historic downtown, offering boutique shops, galleries, and restaurants, as well as attractions like the Lewisburg Farmers Market and Packwood House Museum.
+              </p>
+              <a  href="https://www.lewisburgpa.com/"> Visit Website </a>
+            </div>
+          </div>
+          <!-- /Card -->
+
+          <!-- Card -->
+          <div class="card">
+            <div><img src="52160772965_875b3035af_b.jpg" width="300px" height="200"/></div>
+            <div class="desc">
+              <h3>The Pennsylvania Grand Canyon</h3>
+              <p>
+                Also known as Pine Creek Gorge, this natural wonder features stunning vistas, hiking trails, and opportunities for outdoor recreation.
+              </p>
+              <a  href="https://www.dcnr.pa.gov/StateParks/FindAPark/ColtonPointStatePark/Pages/default.aspx"> Visit Website </a>
+              <a href=""></a>
+            </div>
+          </div>
+          <!-- /Card -->
+
+          <!-- Card -->
+          <div class="card">
+            <div><img src="299026722_870d04f416_b.jpg"  width="300px" height="200px"/></div>
+            <div class="desc">
+              <h3>Central Market York</h3>
+              <p>
+                The oldest continuously operating farmers' market in the U.S.,offering a bustling atmosphere, local produce, crafts, and diverse food vendors.
+              </p>
+              <a  href="https://www.centralmarketyork.com/"> Visit Website </a>
+            </div>
+          </div>
+          <!-- /Card -->
+
+          <!-- /Card -->
+        </div>
+      </div>
+      <footer> 
+        <div id="footer">
+          <h3>Central PA Tourism | ©Copyright. All Rights Reserved</h3>
+        </div>
+      </footer>
+    </main>
+  </body>
+</html>
