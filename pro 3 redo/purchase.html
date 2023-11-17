@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Shalimar&family=Varela&display=swap" rel="stylesheet">
+     
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alice In Wonderland</title>
+    <style>
+        header{
+            background-color: #008DD4;
+            color: white;
+            font-family: 'Shalimar', script;
+            text-align: center;
+            padding: 30px;
+            font-size: 128px;
+            height: fit-content;
+        }
+        header a{
+            color: #fff;
+            text-decoration: none;
+        }
+        nav{
+            background: #96D5CD;
+        }
+
+        #toggle-nav {
+        display: none;
+        position: absolute;
+        right: 1em;
+        top: 1em;
+      }
+      #primary-nav {
+        background-color: #96D5CD;
+      }
+      #primary-nav li {
+        list-style: none;
+        display: inline-block;
+      }
+        h1{
+            color: #F4D039;
+            font-family: 'Shalimar', script;
+            font-size: 70px;
+            padding: 80px;
+        }
+        #quote{
+            color: black;
+            font-family: 'Varela', sans-serif;
+            padding: 20px;
+            font-size: 25px;
+            
+        }
+         .flex{
+    max-width: 1000px;
+    margin: 0 auto;
+    display: flex;
+  
+  }
+
+  .div2{
+ color: black;
+ padding: 50px;
+ margin: 20px;
+ font-family: 'Varela', sans-serif;
+ font-size: 25px;
+  }
+
+  @media screen and (min-width: 768px) {
+  header, header a, nav, h1, #quote, .flex
+  #primary-nav {
+          display: grid;
+          grid-template-rows: 0fr;
+          transition: grid-template-rows 0.5s ease-out;
+        }
+        #primary-nav li {
+          display: block;
+        }
+        body.nav-open #primary-nav {
+          grid-template-rows: 1fr;
+        }
+        .inner {
+          overflow: hidden;
+        }
+        #toggle-nav {
+          display: block; 
+        } 
+}
+    </style>
+</head>
+<body>
+    <main>
+        <header><a href="index.html">Alice In Wonderland</a></header>
+        <button id="toggle-nav"></button>
+        <nav id="primary-nav" role="navigation">
+          <div class="inner">
+            <ul>
+              <li><a href="real.html">Home</a></li>
+              <li><a href="author.html">Author</a></li>
+              <li><a href="description.html">Description</a></li>
+              <li><a href="purchase.html">Purchase</a></li>
+              <li><a href="reviews.html">Reviews</a></li>
+            </ul>
+          </div>
+        </nav>
+
+
+            <div id="content">
+                <!-- Content Start -->
+
+                <div class="flex">
+                    <div class="div1">
+                        <img src="alice-in-wonderland-by-arthur-rackham-08-a-mad-tea-party-c65b66-1024.jpg" alt="">
+                    </div>
+                    <div class="div2">
+                        <br> <Strong> Library Edition</Strong> <br>
+                        <br> <p> $18.99</p> <br> <br> <p > <STrong> <button> PURCHASE </button>  </STrong></p> <br>
+<hr>
+                        <br> <Strong> EPUB</Strong> <br>
+                        <br> <p> $12.99</p> <br> <br> <p > <STrong> <button> PURCHASE </button>  </STrong></p> <br>
+                       <hr>
+                       <br> <Strong> Hard Cover</Strong> <br>
+                        <br> <p> $20.99</p> <br> <br> <p > <STrong> <button> PURCHASE </button>  </STrong></p> <br>
+                    </div>  
+                </main>
+                    
+        </body>
+        <script>
+            window.onload = () => {
+                 const toggleNav = document.getElementById('toggle-nav');
+    toggleNav.innerHTML = '&#9776;';
+
+      toggleNav.addEventListener('click', () => {
+                     document.body.classList.toggle('nav-open');
+      toggleNav.innerHTML = document.body.classList.contains('nav-open')
+        ? '&#x2715'
+        : '&#9776;';
+    });
+  };
+</script>
+        </html>
