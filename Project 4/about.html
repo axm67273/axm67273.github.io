@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
+    <title>About</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #fff;
+            font-size: 16px;
+        }
+
+        header {
+            background-color: #19383D;
+            padding: 10px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        #logo img {
+            max-width: 100%;
+        }
+
+        #logo a {
+            text-decoration: none;
+            color: #fff;
+        }
+
+        #menu-icon {
+            display: block;
+            font-size: 1.5em;
+            color: #fff;
+            cursor: pointer;
+            order: 2; /* Move the menu icon to the right */
+        }
+
+        nav {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-end;
+            order: 1; /* Move the nav to the left */
+            width: 100%;
+            background-color: #19383D;
+            display: none;
+        }
+
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            padding: 10px;
+            margin: 5px 0;
+            text-align: right;
+        }
+
+        h3 {
+            width: 230px;
+            height: 77px;
+            padding: 30px;
+            margin: 20px;
+        
+        }
+
+        .about-section {
+            background-color: 
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            box-sizing: border-box;
+            font-family: 'Inter', sans-serif;
+        }
+
+        .about-section img {
+            max-width: 100%;
+            margin-top: 20px;
+        }
+
+        footer {
+            background-color: #E4E4E4;
+            padding: 10px;
+            text-align: center;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            margin-top: 20px;
+            font-family: 'Inter', sans-serif;
+        }
+
+        .footer-section {
+            flex: 1;
+            margin: 5px;
+            padding: 10px;
+            text-align: center;
+        }
+
+        .social-icons {
+            background-color: #9F6B39;
+            padding: 10px;
+            text-align: center;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-family: 'Inter', sans-serif;
+            color: #fff;
+        }
+
+        .social-icons p {
+            flex: 1;
+            margin: 5px;
+        }
+
+        .social-icons img {
+            width: 30px;
+            margin: 0 5px;
+        }
+
+        @media (max-width: 767px) {
+            body {
+                font-size: 14px;
+            }
+
+            nav {
+                flex-direction: column;
+                align-items: flex-end;
+            }
+
+            nav.show-menu {
+                display: flex;
+            }
+        }
+
+        @media (min-width: 768px) {
+            header {
+                align-items: center;
+            }
+
+            nav {
+                flex-direction: row;
+                align-items: center;
+                width: auto;
+                background-color: transparent;
+                display: flex;
+            }
+
+            nav a {
+                margin: 0 10px;
+            }
+
+            #menu-icon {
+                display: none;
+            }
+
+            .about-section {
+                padding: 40px;
+            }
+
+            .social-icons {
+                justify-content: flex-end;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <div id="logo">
+            <a href="index.html">
+                <img src="LOGO.png" alt="Your Logo">
+            </a>
+        </div>
+        <div id="menu-icon">&#9776;</div>
+        <nav>
+            <a href="about.html">ABOUT</a>
+            <a href="menu.html">MENU</a>
+            <a href="events.html">EVENTS</a>
+            <a href="giftcards.html">GIFT CARDS</a>
+        </nav>
+    </header>
+    <div class="h3">
+        <h3>ABOUT</h3>
+    </div>
+
+    <div class="about-section">
+        <p style="text-align: left;">
+            Once upon a time, in the bustling city of San Francisco, a young couple named Jacob and Emily discovered
+            their shared passion for coffee. Both had an unwavering love for the rich aromas, the intricate flavors,
+            and the sense of community that surrounded a simple cup of joe. As fate would have it, their paths crossed
+            one sunny morning at a local coffee shop, where they struck up a conversation over their shared
+            enthusiasm.<br><br>
+
+            Jacob and Emily quickly realized they were kindred spirits, and their love for coffee became the
+            foundation of their blossoming relationship. They spent countless hours exploring San Francisco's vibrant
+            coffee scene, trying new blends, and discussing their dreams of someday opening their own coffee
+            shop.<br><br>
+
+            Years passed, and life took them on an unexpected journey. Fate led them to the picturesque city of
+            Harrisburg, Pennsylvania. Enchanted by its charm, they knew it was the perfect place to bring their coffee
+            dreams to life. Inspired by their time in San Francisco, they decided to open a coffee shop that would
+            capture the essence of their love story and the vibrant coffee culture they had experienced.<br><br>
+
+            With unwavering determination and a shared vision, Jacob and Emily poured their hearts into creating a
+            haven for coffee lovers in Harrisburg. They meticulously designed the space, infusing it with cozy charm
+            and a welcoming ambiance. They sought out the finest locally sourced beans, carefully selecting a variety
+            of roasts to cater to every coffee connoisseur's palate.<br><br>
+
+            The day finally arrived when they proudly opened the doors of their coffee shop, aptly named "Brews &
+            Bonds." From the very beginning, the aroma of freshly brewed coffee filled the air, drawing in curious
+            locals and wanderers alike. The cozy interior, adorned with San Francisco-inspired artwork and memorabilia,
+            became a sanctuary where people could gather, connect, and forge new friendships.<br><br>
+
+            Word quickly spread throughout Harrisburg about the coffee shop with an intriguing origin story. Brews &
+            Bonds became a beloved fixture in the community, known not only for its exceptional coffee but also for the
+            warmth and hospitality Jacob and Emily extended to each and every visitor. The couple poured their hearts
+            into building relationships with their customers, learning their stories, and creating a space where
+            everyone felt like family.<br><br>
+
+            Today, Brews & Bonds stands as a testament to the enduring power of love, passion, and a good cup of
+            coffee. Jacob and Emily's journey from San Francisco to Harrisburg, guided by their shared love for coffee,
+            has left an indelible mark on the local community. Their story continues to inspire coffee enthusiasts and
+            dreamers alike, reminding us that sometimes, the perfect blend of love and passion can create something
+            truly extraordinary.
+        </p>
+
+        <img src="man-2425121_1280.jpg" alt="Your Image">
+    </div>
+
+    <!-- page content goes here -->
+
+    <footer>
+        <div class="footer-section">
+            <p>Address: 16 Center Square • Harrisburg, PA 17350</p>
+        </div>
+        <div class="footer-section">
+            <p>Hours: Mon – Sat 7AM – 8PM • Sun 8AM – 5PM</p>
+        </div>
+        <div class="footer-section">
+            <p>Phone: (717) 479-5544</p>
+        </div>
+    </footer>
+
+    <div class="social-icons">
+        <p>© 2023 Brews and Bonds</p>
+        <div>
+            <img src="Facebook_Logo_Primary.png" alt="Facebook">
+            <img src="Instagram_Glyph_White.png" alt="Instagram">
+        </div>
+    </div>
+
+    <script>
+        var menuIcon = document.getElementById('menu-icon');
+        var navLinks = document.querySelector('nav');
+
+        menuIcon.addEventListener('click', function () {
+            if (window.innerWidth <= 767) {
+                // For mobile devices
+                navLinks.style.display = navLinks.style.display === 'flex' ? 'none' : 'flex';
+                menuIcon.innerHTML = navLinks.style.display === 'flex' ? '&#10006;' : '&#9776;';
+            }
+        });
+
+        // Adjust navigation for desktop when the window is resized
+        window.addEventListener('resize', function () {
+            if (window.innerWidth > 767) {
+                navLinks.style.display = 'flex';
+            } else {
+                navLinks.style.display = 'none';
+                menuIcon.innerHTML = '&#9776;';
+            }
+        });
+    </script>
+</body>
+
+</html>

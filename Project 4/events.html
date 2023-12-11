@@ -1,0 +1,432 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
+    <title>Events</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #fff;
+        }
+
+        header {
+            background-color: #19383D;
+            padding: 10px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        #logo img {
+            max-width: 100%;
+        }
+
+        #logo a {
+            text-decoration: none;
+            color: #fff;
+        }
+
+        nav {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-end;
+            width: 100%;
+            background-color: #19383D;
+            display: none;
+        }
+
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            padding: 10px;
+            margin: 5px 0;
+            text-align: right;
+            width: 100%; 
+        }
+
+        #menu-icon {
+            display: block;
+            font-size: 1.5em;
+            color: #fff;
+            cursor: pointer;
+            order: 1; 
+        }
+
+        h3 {
+            width: 230px;
+            height: 77px;
+            padding: 30px;
+            margin: 20px;
+        }
+        .event-category {
+            font-size: 24px;
+            margin-bottom: 20px;
+            text-align: center;
+            font-family: 'Inter', sans-serif;
+        }
+    .event-note{
+        font-size: 15px;
+            margin-bottom: 20px;
+            text-align: center;
+            font-family: 'Inter', sans-serif;
+
+    }
+
+        footer {
+            background-color: #E4E4E4;
+            padding: 10px;
+            text-align: center;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            margin-top: 20px; 
+            font-family: 'Inter', sans-serif;
+        }
+
+        .footer-section {
+            flex: 1;
+            margin: 5px;
+            padding: 10px;
+            text-align: center;
+        }
+
+        .social-icons {
+      background-color: #9F6B39;
+      padding: 10px;
+      text-align: center;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-family: 'Inter', sans-serif;
+      color: #fff;
+    }
+
+    .social-icons p {
+      flex: 1;
+      margin: 5px;
+    }
+
+    .social-icons img {
+      width: 30px;
+      margin: 0 5px;
+    }
+    .section {
+            display: flex;
+            width: 1100px;
+            height: 400px;
+            background-color: #E4E4E4;
+            margin: 20px auto;
+        }
+
+        .text {
+            flex: 1;
+            padding: 20px;
+            font-family: 'Inter', sans-serif;
+        }
+
+        .text h2 {
+            margin-bottom: 20px;
+        }
+
+        .image {
+            flex: 1;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .image img {
+            width: 400px;
+            height: 350px;
+        }
+
+        @media (max-width: 767px) {
+      body {
+        font-size: 14px;
+      }
+
+      nav {
+        flex-direction: column;
+        align-items: flex-end;
+      }
+
+      nav.show-menu {
+        display: flex;
+      }
+    }
+
+    @media (min-width: 768px) {
+      header {
+        align-items: center;
+      }
+
+      nav {
+        flex-direction: row;
+        align-items: center;
+        width: auto;
+        background-color: transparent;
+        display: flex;
+      }
+
+      nav a {
+        margin: 0 10px;
+      }
+
+      #menu-icon {
+        display: none;
+      }
+
+      .text-and-image {
+        flex-direction: row;
+      }
+
+      .social-icons {
+        justify-content: flex-end;
+      }
+    }
+    /* Existing styles */
+
+/* ... */
+
+@media (max-width: 767px) {
+  body {
+    font-size: 14px;
+  }
+
+  nav {
+    flex-direction: column;
+    align-items: flex-end;
+  }
+
+  nav.show-menu {
+    display: flex;
+  }
+
+  .section {
+    flex-direction: column;
+    width: 100%;
+    height: auto;
+  }
+
+  .text,
+  .image {
+    flex: 1;
+    padding: 20px;
+    text-align: center;
+  }
+
+  .text h2 {
+    margin-bottom: 20px;
+  }
+
+  .image img {
+    width: 100%; 
+    height: auto; 
+  }
+}
+
+
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <div id="logo">
+            <a href="index.html">
+                <img src="LOGO.png" alt="Your Logo">
+            </a>
+        </div>
+        <div id="menu-icon">&#9776;</div>
+        <nav>
+            <a href="about.html">ABOUT</a>
+            <a href="menu.html">MENU</a>
+            <a href="events.html">EVENTS</a>
+            <a href="giftcards.html">GIFT CARDS</a>
+        </nav>
+    </header>
+
+     <!-- Page content goes here -->
+     <div class="h3">
+        <h3>EVENTS</h3>
+    </div>
+    <div class="event-category">WEEKLY EVENTS:</div>
+    <div class="event-note">Please note that specific event dates and times may vary, and it's always a good idea to check <br><br>
+         with the coffee shop for the most up-to-date information and any additional events they may offer. <br><br></div>
+    <div class="section">
+        <div class="text">
+            <h2>MONDAY:</h2>
+            <p>Morning Yoga Class
+
+                Start your week with a relaxing yoga session.
+                Time: 8:00 AM - 9:00 AM
+                
+                Live Acoustic Music
+                
+                Enjoy soulful acoustic performances by local artists.
+                Time: 7:00 PM - 9:00 PM
+                </p>
+        </div>
+        <div class="image">
+            <img src="53648180-37F4-4684-A77E-1535DB882F60.jpg" alt="Image 1">
+        </div>
+    </div>
+
+    <div class="section">
+        <div class="text">
+            <h2>TUESDAY:</h2>
+            <p>Coffee Tasting Workshop
+                                
+              Learn about different coffee brewing methods and taste various specialty coffees.
+              Time: 6:00 PM - 7:30 PM
+              
+              Open Mic Night
+              
+              Showcase your talent or enjoy the performances of local musicians, poets, and comedians.
+              Time: 8:00 PM - 10:00 PM</p>
+        </div>
+        <div class="image">
+            <img src="pexels-dominika-roseclay-1032000.jpg" alt="Image 2">
+        </div>
+    </div>
+
+    <div class="section">
+        <div class="text">
+            <h2>WEDNESDAY:</h2>
+            <p>Art Exhibition
+
+              Explore the works of local artists displayed throughout the coffee shop.
+              All day
+              
+              Trivia Night
+              
+              Test your knowledge and compete with friends in a fun-filled trivia competition.
+              Time: 7:00 PM - 9:00 PM</p>
+        </div>
+        <div class="image">
+            <img src="pexels-steve-johnson-1183992.jpg" alt="Image 3">
+        </div>
+    </div>
+
+    <div class="section">
+        <div class="text">
+            <h2>THURSDAY:</h2>
+            <p>Cooking Class
+
+              Join our skilled chef and learn to prepare delicious desserts.
+              Limited spots available, reservations required.
+              Time: 5:00 PM - 7:00 PM
+              
+              Board Game Night
+              
+              Gather with friends and enjoy a variety of board games while sipping your favorite drinks.
+              Time: 6:00 PM - 9:00 PM</p>
+        </div>
+        <div class="image">
+            <img src="pexels-cottonbro-studio-4004174.jpg" alt="Image 4">
+        </div>
+    </div>
+
+    <div class="section">
+        <div class="text">
+            <h2>FRIDAY:</h2>
+            <p>Live Jazz Band
+
+              Relax and unwind with the smooth tunes of a live jazz band.
+              Time: 7:30 PM - 9:30 PM</p>
+        </div>
+        <div class="image">
+            <img src="pexels-antoni-shkraba-production-8040842.jpg" alt="Image 5">
+        </div>
+    </div>
+
+    <div class="section">
+        <div class="text">
+            <h2>SATURDAY:</h2>
+            <p>Family Day
+
+              Bring your kids for a special day of face painting, storytelling, and fun activities.
+              Time: 10:00 AM - 12:00 PM
+              
+              Poetry Slam
+              
+              Express your creativity or listen to passionate poets share their work during our poetry slam event.
+              Time: 7:00 PM - 9:00 PM</p>
+        </div>
+        <div class="image">
+            <img src="pexels-jonathan-borba-19080456.jpg" alt="Image 6">
+        </div>
+    </div>
+
+    <div class="section">
+        <div class="text">
+            <h2>SUNDAY:</h2>
+            <p>Book Club Meeting
+
+              Discuss the latest book selection with fellow book enthusiasts over a cup of coffee.
+              Time: 3:00 PM - 4:30 PM
+              
+              Sunday Brunch
+              
+              Indulge in a delicious brunch menu accompanied by live acoustic music.
+              Time: 10:00 AM - 2:00 PM</p>
+        </div>
+        <div class="image">
+            <img src="pexels-helena-lopes-711009.jpg" alt="Image 7">
+        </div>
+    </div>
+
+
+    <footer>
+        <div class="footer-section">
+            <p>Address: 16 Center Square • Harrisburg, PA 17350</p>
+        </div>
+        <div class="footer-section">
+            <p>Hours: Mon – Sat 7AM – 8PM • Sun 8AM – 5PM</p>
+        </div>
+        <div class="footer-section">
+            <p>Phone: (717) 479-5544</p>
+        </div>
+    </footer>
+
+    <div class="social-icons">
+        <p>© 2023 Brews and Bonds</p>
+        <div>
+            <img src="Facebook_Logo_Primary.png" alt="Facebook">
+            <img src="Instagram_Glyph_White.png" alt="Instagram">
+        </div>
+    </div>
+
+   
+
+    <script>
+      var menuIcon = document.getElementById('menu-icon');
+      var navLinks = document.querySelector('nav');
+  
+      menuIcon.addEventListener('click', function () {
+          if (window.innerWidth <= 767) {
+              // For mobile devices
+              navLinks.style.display = navLinks.style.display === 'flex' ? 'none' : 'flex';
+              menuIcon.innerHTML = navLinks.style.display === 'flex' ? '&#10006;' : '&#9776;';
+          }
+      });
+  
+      // Adjust navigation for desktop when the window is resized
+      window.addEventListener('resize', function () {
+          if (window.innerWidth > 767) {
+              navLinks.style.display = 'flex';
+          } else {
+              navLinks.style.display = 'none';
+              menuIcon.innerHTML = '&#9776;';
+          }
+      });
+  </script>
+
+</body>
+
+</html>

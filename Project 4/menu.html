@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
+    <title>Menu</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #fff;
+            font-size: 16px;
+        }
+
+        header {
+            background-color: #19383D;
+            padding: 10px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        #logo img {
+            max-width: 100%;
+        }
+
+        nav {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-end;
+            width: 100%;
+            background-color: #19383D;
+            display: none;
+        }
+
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            padding: 10px;
+            margin: 5px 0;
+            text-align: right;
+        }
+        h3 {
+            width: 230px;
+            height: 77px;
+            padding: 30px;
+            margin: 20px;
+        }
+        #menu-icon,
+        #close-icon {
+            display: block;
+            font-size: 1.5em;
+            color: #fff;
+            cursor: pointer;
+            order: 2; 
+            background: none;
+            border: none;
+            padding: 0;
+        }
+
+        #menu-icon:hover,
+        #close-icon {
+            color: #ccc;
+            display: none;
+        }
+
+        #menu-icon.active {
+            display: none;
+        }
+
+        #close-icon.active {
+            display: block;
+        }
+
+        footer {
+            background-color: #E4E4E4;
+            padding: 10px;
+            text-align: center;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            margin-top: 20px;
+            font-family: 'Inter', sans-serif;
+        }
+
+        .footer-section {
+            flex: 1;
+            margin: 5px;
+            padding: 10px;
+            text-align: center;
+        }
+        .social-icons {
+            background-color: #9F6B39;
+            padding: 10px;
+            text-align: center;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-family: 'Inter', sans-serif;
+            color: #fff;
+        }
+
+        .social-icons p {
+            flex: 1;
+            margin: 5px;
+        }
+
+        .social-icons img {
+            width: 30px;
+            margin: 0 5px;
+        }
+
+        .menu-section {
+            padding: 20px;
+            text-align: center;
+            font-family: 'Inter', sans-serif;
+        }
+
+        .menu-category {
+            font-size: 24px;
+            margin-bottom: 20px;
+            font-family: 'Inter', sans-serif;
+        }
+
+
+        .menu-item {
+            display: flex;
+            justify-content: space-around;
+            margin-bottom: 20px;
+            font-family: 'Inter', sans-serif;
+        }
+
+        .menu-box {
+            width: 439px;
+            height: 807px;
+            background-color: #E4E4E4;
+            padding: 20px;
+            box-sizing: border-box;
+            font-family: 'Inter', sans-serif;
+            
+        }
+
+        @media (max-width: 767px) {
+            nav {
+                flex-direction: column;
+                align-items: flex-end;
+            }
+
+            nav.show-menu {
+                display: flex;
+            }
+
+            body {
+                font-size: 14px;
+            }
+
+            .menu-item {
+                flex-direction: column;
+            }
+
+            .menu-box {
+                width: 100%;
+                margin-bottom: 20px;
+            }
+        }
+
+        @media (min-width: 768px) {
+            header {
+                align-items: center;
+            }
+
+            nav {
+                flex-direction: row;
+                align-items: center;
+                width: auto;
+                background-color: transparent;
+                display: flex;
+            }
+
+            nav a {
+                margin: 0 10px;
+            }
+
+            #menu-icon {
+                display: none;
+            }
+
+            #close-icon {
+                display: none;
+            }
+
+            .text-and-image {
+                flex-direction: row;
+            }
+
+            .social-icons {
+                justify-content: flex-end;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <div id="logo">
+            <a href="index.html">
+                <img src="LOGO.png" alt="Your Logo">
+            </a>
+        </div>
+        <div id="menu-icon">&#9776;</div>
+        <button id="close-icon">&#10006;</button>
+        <nav>
+            <a href="about.html">ABOUT</a>
+            <a href="menu.html">MENU</a>
+            <a href="events.html">EVENTS</a>
+            <a href="giftcards.html">GIFT CARDS</a>
+        </nav>
+    </header>
+    <div class="h3">
+        <h3>MENU</h3>
+    </div>
+    <div class="menu-section">
+        <div class="menu-category">DRINKS</div>
+        <div class="menu-item">
+            <div class="menu-box">
+                <p>EXPRESSO BAR:</p> 
+                Espresso - $2.50
+
+                Americano - $3.00
+
+                Latte - $4.00
+
+                Cappuccino - $4.00
+
+                Mocha - $4.50
+
+                Macchiato - $4.50
+
+                Flat White - $4.50
+            </div>
+            <div class="menu-box">
+                <p>COFFEE</p>
+                Iced Coffee - $4.00
+
+                Cold Brew - $4.50
+
+                Frappuccino - $5.00
+
+                Hot Chocolate -$3.50
+            </div>
+            <div class="menu-box">
+                <p>TEAS:</p>
+                Chai Tea Latte-$4.50
+
+                Matcha Latte -$4.50
+
+                Herbal Tea - $3.00
+
+                Iced Tea - $3.50
+            </div>
+        </div>
+    </div>
+
+    <div class="menu-section">
+        <div class="menu-category">TEA FLAVORS</div>
+        <div class="menu-item">
+            <div class="menu-box">
+                <p>BLACK TEAS</p>
+
+                Earl Grey
+
+                English Breakfast
+
+                Darjeeling Tea
+
+                Assam Tea
+            </div>
+            <div class="menu-box">
+                <p>GREEN TEAS:</p>
+
+                Green Tea
+
+                Jasmine Tea
+
+                Sencha Tea
+
+                Genmaicha Tea
+            </div>
+            <div class="menu-box">
+                <p>SPEACIALTY TEAS:</p>
+
+                Matcha Tea
+
+                Oolong Tea
+
+                White Tea
+
+                Chai Tea
+
+                Pu-erh Tea
+            </div>
+            <div class="menu-box">
+                <p>HERBAL TEAS:</p>
+
+                Chamomile Tea
+
+                Peppermint Tea
+
+                Rooibos Tea
+
+                Herbal Blend (e.g., hibiscus, ginger, lemongrass)
+
+                Lemon Verbena Tea
+            </div>
+        </div>
+    </div>
+
+    <div class="menu-section">
+        <div class="menu-category">FOOD</div>
+        <div class="menu-item">
+            <div class="menu-box">
+                <p>BREAKFAST ITEMS:</p>
+                Croissant - $2.50
+
+                Bagel - $3.00
+
+                Muffin - $2.50
+
+                Scone - $3.00
+
+                Quiche - $5.50
+
+                Fruit Parfait - $4.50
+            </div>
+            <div class="menu-box">
+                <p>LUNCH ITEMS:</p>
+                Sandwich (e.g., ham and cheese, turkey and avocado) - $6.00
+
+                Salad (e.g., chicken Caesar, Greek) - $7.50
+
+                Soup of the Day - $4.50
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="footer-section">
+            <p>Address: 16 Center Square • Harrisburg, PA 17350</p>
+        </div>
+        <div class="footer-section">
+            <p>Hours: Mon – Sat 7AM – 8PM • Sun 8AM – 5PM</p>
+        </div>
+        <div class="footer-section">
+            <p>Phone: (717) 479-5544</p>
+        </div>
+    </footer>
+
+    <div class="social-icons">
+        <p>© 2023 Brews and Bonds</p>
+        <div>
+            <img src="Facebook_Logo_Primary.png" alt="Facebook">
+            <img src="Instagram_Glyph_White.png" alt="Instagram">
+        </div>
+    </div>
+    <script>
+        var menuIcon = document.getElementById('menu-icon');
+        var closeIcon = document.getElementById('close-icon');
+        var navLinks = document.querySelector('nav');
+
+        menuIcon.addEventListener('click', function () {
+            navLinks.classList.toggle('show-menu');
+            menuIcon.classList.toggle('active');
+            closeIcon.classList.toggle('active');
+        });
+
+        closeIcon.addEventListener('click', function () {
+            navLinks.classList.remove('show-menu');
+            menuIcon.classList.remove('active');
+            closeIcon.classList.remove('active');
+        });
+    </script>
+
+</body>
+
+</html>
